@@ -1,7 +1,3 @@
-# StressCode
-This is the environmental code section of my project 
----
-
 ```markdown
 # StressCode
 
