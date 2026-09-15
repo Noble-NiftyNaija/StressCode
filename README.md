@@ -1,3 +1,35 @@
+## StressCode as a Three-Part Informational Coding System
+
+StressCode is a three-part informational coding system designed to connect stress-related biomedical information across environmental, molecular, and imaging levels.
+
+The three parts are:
+
+```text
+Environment Code → Molecular Code → Imaging Code
+Together, these three code layers allow users to describe how a stressor or environmental context may be associated with a biological stress-response pathway and how that pathway may appear as an imaging-visible feature in a specific anatomical or tumor location.
+1. Environment Code
+The Environment Code identifies the stressor or contextual environment that may influence the biological system. This may include the tumor microenvironment, tissue environment, treatment environment, cellular environment, physiological environment, or broader external environment.
+Examples include hypoxia, inflammation, oxidative stress, radiation exposure, acidosis, nutrient deprivation, immune suppression, environmental toxin exposure, and chronic psychosocial stress.
+2. Molecular Code
+The Molecular Code identifies the molecular or biological stress-response pathway associated with the Environment Code.
+Examples include HIF-1α signaling, VEGF angiogenesis, DNA damage response, NF-kB inflammatory signaling, oxidative stress response, PI3K/AKT/mTOR signaling, p53 signaling, unfolded protein response, TGF-beta signaling, and immune checkpoint signaling.
+3. Imaging Code
+The Imaging Code identifies the imaging-visible phenotype associated with the Molecular Code and maps that phenotype to a specific image location.
+Examples include central necrosis in the tumor core, elevated rCBV in the enhancing tumor region, FLAIR hyperintensity in the peritumoral region, diffusion restriction in hypercellular tumor regions, ring enhancement along the tumor margin, or PET signal in a hypoxic region.
+A complete StressCode annotation may be represented as:
+Environment Code + Molecular Code + Imaging Code = StressCode Annotation
+Example:
+Hypoxic tumor microenvironment → HIF-1α/VEGF signaling → central necrosis and elevated rCBV in tumor core
+
+---
+
+# Recommended one-sentence definition
+
+Use this as your official definition:
+
+> **StressCode is a three-part informational coding system that connects environmental stress contexts, molecular stress-response pathways, and imaging-visible manifestations into one reusable annotation structure.**
+
+
 ```markdown
 # StressCode
 
