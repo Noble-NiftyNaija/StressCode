@@ -1,0 +1,36 @@
+{
+  "framework": "StressCode / TCSI Locked Reference Operator",
+  "cohort": "TCGA-GBM",
+  "n_samples": 166,
+  "msigdb_version": "h.all.v2026.1.Hs",
+  "ssgsea_weight_alpha": 0.25,
+  "ddof": 1,
+  "normalization": "log2(FPKM-UQ+1)",
+  "reference_parameters": {
+    "HALLMARK_HYPOXIA": {
+      "hallmark_name": "HALLMARK_HYPOXIA",
+      "mean": 0.421345,
+      "std": 0.050713
+    },
+    "HALLMARK_GLYCOLYSIS": {
+      "hallmark_name": "HALLMARK_GLYCOLYSIS",
+      "mean": 0.378742,
+      "std": 0.03221
+    },
+    "HALLMARK_ANGIOGENESIS": {
+      "hallmark_name": "HALLMARK_ANGIOGENESIS",
+      "mean": 0.401363,
+      "std": 0.072149
+    },
+    "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY": {
+      "hallmark_name": "HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY",
+      "mean": 0.501121,
+      "std": 0.04238
+    },
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+      "hallmark_name": "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+      "mean": 0.330302,
+      "std": 0.072278
+    }
+  }
+}
