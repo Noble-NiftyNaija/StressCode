@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "StressCode: Making Shared Research Data Easier to Connect and Reuse"
+message: "If you use or adapt StressCode, please cite this repository."
+type: software
+authors:
+  - family-names: "Thomas"
+    given-names: "Naija"
+    affiliation: "Meharry Medical College, School of Applied Computational Sciences"
+    email: "Nthomas24@mmc.edu"
+repository-code: "https://github.com/YOUR-USERNAME/stresscode"
+abstract: "StressCode is an ontology-informed annotation framework for connecting shared biomedical research data through stress-response concepts."
+keywords:
+  - biomedical data reuse
+  - stress response
+  - ontology
+  - FAIR data
+  - cancer data
+  - glioblastoma
+  - radiogenomics
+  - TCSI
+license: "CC-BY-NC-4.0"
+date-released: "2026-04-01"
+version: "0.1.0"

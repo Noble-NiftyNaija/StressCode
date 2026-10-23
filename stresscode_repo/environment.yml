@@ -1,0 +1,63 @@
+# StressCode / TCSI Dissertation Conda Environment
+# ─────────────────────────────────────────────────────────────────────────────
+# ACTION REQUIRED before publishing:
+#   Run `conda env export --from-history > environment_actual.yml` in the
+#   environment where you ran the notebooks, then merge the pinned versions
+#   below with your actual output.
+#   If you used pip inside conda: also run `pip freeze` and paste the pip
+#   section at the bottom.  Reviewers will check these versions.
+#
+# Versions confirmed from VM pip freeze: pandas, numpy, scipy, matplotlib,
+#   seaborn, requests, tqdm, pyarrow.
+# All others marked # VERIFY_VERSION.
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: stresscode
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  # Python interpreter
+  - python=3.11         # VERIFY_VERSION — check: python --version
+
+  # Core data science (versions confirmed)
+  - pandas=2.2.3
+  - numpy=1.26.4
+  - scipy=1.14.1
+  - matplotlib=3.9.2
+  - seaborn=0.13.2
+
+  # Statistics
+  - statsmodels>=0.14.0 # VERIFY_VERSION — check: conda list statsmodels
+
+  # Machine learning
+  - scikit-learn>=1.4.0 # VERIFY_VERSION — check: conda list scikit-learn
+
+  # Notebook
+  - jupyter>=1.0.0      # VERIFY_VERSION
+  - ipykernel>=6.29.0   # VERIFY_VERSION
+
+  # IO / utilities
+  - requests=2.32.3
+  - tqdm=4.70.1
+  - pyarrow=25.0.1
+  - openpyxl>=3.1.0     # VERIFY_VERSION — for .xlsx annotation templates
+
+  # pip-only packages (no conda-forge formula or version mismatch)
+  - pip
+  - pip:
+    - gseapy>=1.0.6     # VERIFY_VERSION — check: pip show gseapy
+                         # ssGSEA: weight=0.25, MSigDB h.all.v2026.1.Hs
+    - lifelines>=0.27.8  # VERIFY_VERSION — check: pip show lifelines
+
+# ─────────────────────────────────────────────────────────────────────────────
+# R session (if used for supplementary analyses)
+# ─────────────────────────────────────────────────────────────────────────────
+# VERIFY_VERSION: run sessionInfo() in R and paste output here if R was used.
+# Example:
+#   R version: 4.3.x
+#   survival: x.xx
+#   ggplot2: x.x.x
+#   survminer: x.x.x

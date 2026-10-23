@@ -1,0 +1,6 @@
+"axis_id","axis_short","axis_name","hallmark_pathway","reference_mean","reference_sd","normalization","msigdb_version","notes"
+"phi_1","HYP","Hypoxia","HALLMARK_HYPOXIA","REPLACE_WITH_COMPUTED","REPLACE_WITH_COMPUTED","log2(FPKM-UQ+1)","h.all.v2026.1.Hs","μ and σ estimated on TCGA-GBM training cohort (n=166). Apply these FIXED parameters to CGGA and CPTAC; never re-estimate from the external cohort. ddof=1 (sample SD). ssGSEA weight α=0.25."
+"phi_2","GLY","Glycolysis","HALLMARK_GLYCOLYSIS","REPLACE_WITH_COMPUTED","REPLACE_WITH_COMPUTED","log2(FPKM-UQ+1)","h.all.v2026.1.Hs","Same locked-operator conventions as phi_1."
+"phi_3","ANG","Angiogenesis","HALLMARK_ANGIOGENESIS","REPLACE_WITH_COMPUTED","REPLACE_WITH_COMPUTED","log2(FPKM-UQ+1)","h.all.v2026.1.Hs","Same locked-operator conventions as phi_1."
+"phi_4","ROS","Oxidative Stress","HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY","REPLACE_WITH_COMPUTED","REPLACE_WITH_COMPUTED","log2(FPKM-UQ+1)","h.all.v2026.1.Hs","Same locked-operator conventions as phi_1."
+"phi_5","INF","Inflammation (TNFα/NF-κB)","HALLMARK_TNFA_SIGNALING_VIA_NFKB","REPLACE_WITH_COMPUTED","REPLACE_WITH_COMPUTED","log2(FPKM-UQ+1)","h.all.v2026.1.Hs","Same locked-operator conventions as phi_1. UPR (HALLMARK_UNFOLDED_PROTEIN_RESPONSE) excluded from TCSI composite: univariate Cox p=0.91, ΔC negligible."

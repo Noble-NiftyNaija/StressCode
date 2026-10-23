@@ -1,0 +1,41 @@
+# StressCode / TCSI Dissertation Analysis Environment
+# ─────────────────────────────────────────────────────────────────────────────
+# ACTION REQUIRED before publishing:
+#   Run `pip freeze > requirements_actual.txt` in the environment where you ran
+#   Aim1A_Molecular_EDA_with_A1_A2.ipynb and replace the versions below with
+#   the exact output.  Reviewers will check these against your results.
+#
+# Versions confirmed from this analysis environment (VM pip freeze):
+#   pandas, numpy, scipy, matplotlib, seaborn, requests, tqdm, pyarrow
+# Versions marked # VERIFY_VERSION: not in this VM — replace with your actual.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Core data science ────────────────────────────────────────────────────────
+pandas==2.2.3
+numpy==1.26.4
+scipy==1.14.1
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# ── Bioinformatics ───────────────────────────────────────────────────────────
+gseapy>=1.0.6                 # VERIFY_VERSION — run: pip show gseapy
+                               # ssGSEA: weight=0.25, MSigDB h.all.v2026.1.Hs
+                               # Gene aliases applied: RIGI→DDX58, GFUS→TSTA3
+
+# ── Survival analysis ────────────────────────────────────────────────────────
+lifelines>=0.27.8              # VERIFY_VERSION — run: pip show lifelines
+                               # CoxPHFitter, concordance_index, Schoenfeld test
+
+# ── Statistics ───────────────────────────────────────────────────────────────
+statsmodels>=0.14.0            # VERIFY_VERSION — run: pip show statsmodels
+scikit-learn>=1.4.0            # VERIFY_VERSION — for cross-validation utilities
+
+# ── Notebook / IO ────────────────────────────────────────────────────────────
+jupyter>=1.0.0                 # VERIFY_VERSION
+ipykernel>=6.29.0              # VERIFY_VERSION
+requests==2.32.3
+tqdm==4.70.1
+pyarrow==25.0.1
+
+# ── Data / file utilities ────────────────────────────────────────────────────
+openpyxl>=3.1.0                # VERIFY_VERSION — for .xlsx annotation templates
