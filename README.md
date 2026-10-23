@@ -347,23 +347,12 @@ All rights reserved unless otherwise specified in the repository license.
 
 Recommended license options:
 
-### Option 1: CC BY-NC 4.0
-
-This allows others to share and adapt the work for noncommercial purposes only, as long as they give proper credit.
-
-Recommended if you want people to use the framework academically but not commercially without permission.
-
-### Option 2: CC BY 4.0
+### CC BY 4.0
 
 This allows broad reuse, including commercial reuse, as long as people give credit.
 
 Recommended if your goal is maximum open science reuse.
 
-### Option 3: All Rights Reserved
-
-This provides the most restrictive protection but limits reuse.
-
-Recommended if you are not ready for others to adapt the framework yet.
 
 ---
 
@@ -384,25 +373,6 @@ StressCode is a research framework and prototype annotation resource. It is not 
 No private patient information, restricted-access data, third-party proprietary material, or confidential commercial trade secrets are included in this repository.
 ```
 
----
-
-## Important recommendation for protecting your work
-
-For your situation, I recommend using:
-
-> **Creative Commons Attribution-NonCommercial 4.0 International License — CC BY-NC 4.0**
-
-This means others can use and build on StressCode **only if they credit you** and **do not use it commercially** without separate permission.
-
-You should create a separate file in GitHub named:
-
-```text
-LICENSE
-```
-
-And put this short notice in it:
-
-```text
 StressCode © 2026 by Naija Thomas is licensed under Creative Commons Attribution-NonCommercial 4.0 International.
 
 You are free to share and adapt this work for noncommercial purposes, provided appropriate credit is given to the original author.
@@ -414,10 +384,7 @@ Framework: StressCode
 Contact: Nthomas24@mmc.edu / Naijathomas@gmail.com
 ```
 
-Also, if GitHub gives you the option to select a license, choose:
+GitHub license:
 
-```text
-Creative Commons Attribution Non Commercial 4.0 International
+Creative Commons Attribution-NonCommercial 4.0 International
 ```
-
-If that exact option is not available in GitHub’s license picker, you can manually create the `LICENSE` file.
